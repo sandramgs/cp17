@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% block contenido %}
+<div class="formulario">
+    <form action="{{ url_for('contactanos')}}" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        <div class="grupo">
+            {{ form.nombre.label }}
+            {{ form.nombre(class="control")}}
+        </div>
+        <div class="grupo">
+            {{ form.correo.label }}
+            {{ form.correo(class="control") }}
+        </div>
+        <div class="grupo">
+            {{ form.mensaje.label }}
+            {{ form.mensaje(class="control", rows="3") }}
+        </div>
+        <div class="grupo">
+            {{ form.enviar(class="boton") }}
+        </div>
+        <div class="mensaje">
+            {% if mensaje %}
+                {{ mensaje }}
+            {% endif %}
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+{% block contenido %}
+<div class="formulario">
+    <form action="{{ url_for('login') }}" method="POST">
+        {{ form.hidden_tag() }}
+        <div class="grupo">
+            {{ form.username.label }}
+            {{ form.username(class="control") }}
+            <!--<label>Usuario</label>
+            <input type="text" name="usuario" class="control" />-->
+        </div>
+        <div class="grupo">
+            <!-- <label>Contraseña</label>
+            <input type="password" name="contrasena" class="control" /> -->
+            {{ form.password.label }}
+            {{ form.password(class="control") }}
+        </div>
+        <div class="grupo">
+            <!-- <input type="submit" value="Iniciar sesión" class="boton" /> -->
+            {{ form.enviar(class="boton") }}
+        </div>
+        <div class="grupo">
+            {% if mensaje %}
+                {{ mensaje }}
+            {% endif %}
+        </div>
+    </form>
+</div>
+{% endblock %}

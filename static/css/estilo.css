@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+.barra {
+    height: 3em;
+    max-height: 3em;
+    background: rgb(61,99,172);
+    
+    margin: 0px;
+    border-bottom: solid 1px #ccc;
+    padding-top: 1em;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+.titulo {
+    margin-top: 0;
+    margin-left: 10px;
+    width: fit-content;
+    display: inline;
+}
+
+.opcion-barra {
+    width: fit-content;
+    display: inline;
+    height: 100%;
+    float: right;
+    padding-right: 10px;
+}
+.opcion-barra a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+}
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.formulario {
+    border: 1px solid rgb(61,99,172);
+    border-radius: 10px;
+    padding: 1rem;
+}
+.grupo {
+    margin-bottom: 1rem;
+}
+.control {
+    line-height: 30px;
+    border: 1px solid rgb(61,99,172);
+    width: 100%;
+}
+.boton {
+    border-style: none;
+    background-color: rgb(61,99,172);
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.mensaje{
+    color: red;
+    font-size: 11px;
+}
+
+.tabla {
+    width: 100%;
+    padding: 0px;
+    border-spacing: 0px;
+    font-size:0.7rem;
+    border-top: 1px solid rgb(61,99,172);
+    border-left: 1px solid rgb(61,99,172);
+}
+
+.tabla th,
+.tabla td {
+    border-right: 1px solid rgb(61,99,172);
+    border-bottom: 1px solid rgb(61,99,172);
+    padding: 0.3rem;
+}
+
+.tabla th {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(61,99,172);
+}
